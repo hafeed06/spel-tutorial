@@ -1,6 +1,6 @@
 package co.hafid.speltutorial;
 
-import co.hafid.speltutorial.properties.NewDealerNetworkProperties;
+import co.hafid.speltutorial.properties.StudentProperties;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -9,7 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class SpeltutorialApplicationTests {
 
     @Autowired
-    private NewDealerNetworkProperties testProperties;
+    private StudentProperties studentProperties;
 
     @Test
     void context_loads() {

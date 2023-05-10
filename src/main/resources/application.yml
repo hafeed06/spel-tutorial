@@ -1,27 +1,10 @@
 server:
   port: 9000
-rces:
-  dealer-network:
-    request-enrichers:
-      FR:
-        "[renault.blacklisted==false;renault.receiveLead==true;dealerActivities.birId==01]":
-          product-type: vehicle_nci
-          brand-code: APL03
-        "[dacia.blacklisted==false;dacia.receiveLead==true;dealerActivities.birId==01]":
-          product-type: vehicle_ncp
-          brand-code: APL03
-        "[renault.blacklisted==false;renault.receiveLead==true;dealerActivities.birId==09]":
-          product-type: vehicle_nci
-          brand-code: APL05
-        "[dacia.blacklisted==false;dacia.receiveLead==true;dealerActivities.birId==09]":
-          product-type: vehicle_ncp
-          brand-code: APL05
-  new-dealer-network:
-    request-enrichers:
-      FR:
-        vehicle_nci:
-          APL03: renault.blacklisted==false;renault.receiveLead==true;dealerActivities.birId==01
-          APL05: dacia.blacklisted==false;dacia.receiveLead==true;dealerActivities.birId==01
-        vehicle_ncp:
-          APL03: renault.blacklisted==false;renault.receiveLead==true;dealerActivities.birId==09
-          APL05: dacia.blacklisted==false;dacia.receiveLead==true;dealerActivities.birId==09
+app:
+  properties:
+    students:
+      - firstName: "John"
+        lastName: "Dist"
+      - firstName: "French"
+        lastName: "Montana"
+
