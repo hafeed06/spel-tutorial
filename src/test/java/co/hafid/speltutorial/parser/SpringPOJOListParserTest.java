@@ -57,9 +57,7 @@ class SpringPOJOListParserTest {
     void filter_cars_from_specific_maker() {
         // Given
 
-        ExpressionParser expressionParser = new SpelExpressionParser(
-                new SpelParserConfiguration(true, true)
-        );
+        ExpressionParser expressionParser = new SpelExpressionParser(spelConfig);
         Expression expression = expressionParser.parseExpression("cars.?[make=='Apollo']");
 
         EvaluationContext context = new StandardEvaluationContext(container);
