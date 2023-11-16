@@ -10,7 +10,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 public class SpeltutorialApplication {
 
 	public static void main(String[] args) {
-			SpringApplication.run(SpeltutorialApplication.class, args);   
+			SpringApplication.run(SpeltutorialApplication.class, args);
 	}
 
 }
